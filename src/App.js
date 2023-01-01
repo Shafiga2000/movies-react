@@ -3,17 +3,18 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Home from "./Home";
 import NavbarComponent from "./Navbar";
+import { Container } from "react-bootstrap";
 
 function App() {
   return (
     <div className="App">
       <Router>
-        <div className="App-container">
+        <Container>
           <NavbarComponent />
           <Routes>
             <Route exact element={<Home />} path="/" />
           </Routes>
-        </div>
+        </Container>
       </Router>
     </div>
   );

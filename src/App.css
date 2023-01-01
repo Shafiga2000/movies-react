@@ -49,10 +49,6 @@ a {
   background-color: #eeeeee;
 }
 
-.App-container {
-  width: calc(100% / 6 * 4);
-  margin: 0 auto;
-}
 
 header {
   padding: 16px 0;
