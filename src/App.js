@@ -4,6 +4,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Home from "./Home";
 import NavbarComponent from "./Navbar";
 import { Container } from "react-bootstrap";
+import Movies from "./Movies";
+import Contact from "./Contact";
 
 function App() {
   return (
@@ -13,6 +15,8 @@ function App() {
           <NavbarComponent />
           <Routes>
             <Route exact element={<Home />} path="/" />
+            <Route exact element={<Movies />} path="/movies" />
+            <Route exact element={<Contact />} path="/contact" />
           </Routes>
         </Container>
       </Router>
